@@ -14,3 +14,30 @@
 	margin: 0 40px;
 	margin-top: 20px;
 }
+
+.gallery__container, {
+	margin-top: 21px;
+}
+
+.search__input {
+	margin-bottom: 21px;
+}
+
+.cart__button, .category__label {
+	margin-right: 5px;
+}
+
+.category__label_container {
+	margin-bottom: 10px;
+}
+
+.product__menu {
+
+	&_tabs {
+		margin: 20px 0;
+	}
+
+	&_text {
+		margin: 15px 0 0 17px;
+	}
+}
