@@ -1,0 +1,41 @@
+mixin product(image,nombre,descripcion,modal)
+  .col-xs-6.col-sm-4.col-md-4
+    .thumbnail
+      img(src=image)
+      .caption
+        h3=nombre
+        p=descripcion
+        p
+          a.cart__button.btn.btn-primary(href='#', role='button') $229 
+            span.glyphicon.glyphicon-shopping-cart
+          if modal 
+            a.btn.btn-default(href='#', role='button', data-toggle="modal", data-target="#product_description") Detalles
+          else
+            a.btn.btn-default(href='#', role='button') Detalles
+
+.row.gallery__container
+  +product(
+    'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg',
+    'Hipster Ultimate',
+    'La camiseta ideal para hipsters', true
+  )
+  +product(
+    'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg',
+    'On Motion Live',
+    'Perfecta para salidas rocosas'
+  )
+  +product(
+    'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg',
+    'Hipster Ultimate',
+    'Para los amantes de underground'
+  )
+  +product(
+    'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg',
+    'Hipster Ultimate',
+    'La camiseta ideal para hipsters'
+  )
+  +product(
+    'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg',
+    'Hipster Ultimate',
+    'La camiseta ideal para hipsters'
+  )
