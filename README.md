@@ -1,4 +1,5 @@
 ## ecommerce
+![](https://raw.githubusercontent.com/anamariasosa/ecommerce/master/screenshots/home.png)
 To run this project
 
 ```cd ecommerce```
