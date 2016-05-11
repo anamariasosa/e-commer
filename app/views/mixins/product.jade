@@ -1,0 +1,14 @@
+mixin product(image,nombre,descripcion,modal)
+  .col-xs-6.col-sm-4.col-md-4
+    .thumbnail
+      img(src=image)
+      .caption
+        h3=nombre
+        p=descripcion
+        p
+          a.cart__button.btn.btn-primary(href='#', role='button') $229 
+            span.glyphicon.glyphicon-shopping-cart
+          if modal 
+            a.btn.btn-default(href='#', role='button', data-toggle="modal", data-target="#product_description") Detalles
+          else
+            a.btn.btn-default(href='#', role='button') Detalles

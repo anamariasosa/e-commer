@@ -1,19 +1,5 @@
-mixin product(image,nombre,descripcion,modal)
-  .col-xs-6.col-sm-4.col-md-4
-    .thumbnail
-      img(src=image)
-      .caption
-        h3=nombre
-        p=descripcion
-        p
-          a.cart__button.btn.btn-primary(href='#', role='button') $229 
-            span.glyphicon.glyphicon-shopping-cart
-          if modal 
-            a.btn.btn-default(href='#', role='button', data-toggle="modal", data-target="#product_description") Detalles
-          else
-            a.btn.btn-default(href='#', role='button') Detalles
-
-.row.gallery__container
+include ../mixins/product.jade
+.row.thumbnails__container
   +product(
     'https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg',
     'Hipster Ultimate',
