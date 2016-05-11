@@ -3,9 +3,10 @@ html
   head
     include ./views/includes/head.jade
   body
-    header
-        include ./views/layouts/header.jade
-    
-    footer
-        include ./views/includes/footer.jade
-    include ./views/includes/scripts.jade
+    .container.app__container
+      header
+          include ./views/layouts/header.jade
+      
+      footer
+          include ./views/includes/footer.jade
+      include ./views/includes/scripts.jade
