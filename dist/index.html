@@ -8,13 +8,16 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse menu">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"> </span><span class="icon-bar"> </span></button><a href="#" class="navbar-brand">E-commerce</a>
+            <button type="button" data-toggle="collapse" data-target="#menu_toogle" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">E-commerce</a>
           </div>
-          <div class="collapse">navbar-collapse
-            <ul></ul>
+          <div id="menu_toogle" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"> <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; Canasta</a></li>
+              <li><a href="#">Salir</a></li>
+            </ul>
           </div>
         </div>
       </nav>
