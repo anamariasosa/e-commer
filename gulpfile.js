@@ -1,5 +1,5 @@
 var gulp = require('gulp')
-  , plugins = require('gulp-load-plugins')();
+  , plugins = require('gulp-load-plugins')()
   , ghPages = require('gulp-gh-pages');
 
 var browserSync = require('browser-sync').create();
