@@ -6,41 +6,42 @@
 }
 
 /* line 7, app/sass/main.scss */
-.menu {
-  padding: 0 30px;
+.cart__button,
+.category__label_item {
+  margin-right: 5px;
 }
 
-/* line 11, app/sass/main.scss */
+/* line 12, app/sass/main.scss */
+.category__label_container {
+  margin-bottom: 10px;
+}
+
+/* line 16, app/sass/main.scss */
 .full__container {
   margin: 0 40px;
   margin-top: 20px;
 }
 
-/* line 16, app/sass/main.scss */
-.thumbnails__container {
-  margin-top: 21px;
+/* line 21, app/sass/main.scss */
+.menu {
+  padding: 0 30px;
 }
 
-/* line 20, app/sass/main.scss */
+/* line 26, app/sass/main.scss */
+.product__menu_tabs {
+  margin: 20px 0;
+}
+/* line 30, app/sass/main.scss */
+.product__menu_text {
+  margin: 15px 0 0 17px;
+}
+
+/* line 35, app/sass/main.scss */
 .search__input {
   margin-bottom: 21px;
 }
 
-/* line 24, app/sass/main.scss */
-.cart__button, .category__label_item {
-  margin-right: 5px;
-}
-
-/* line 28, app/sass/main.scss */
-.category__label_container {
-  margin-bottom: 10px;
-}
-
-/* line 34, app/sass/main.scss */
-.product__menu_tabs {
-  margin: 20px 0;
-}
-/* line 38, app/sass/main.scss */
-.product__menu_text {
-  margin: 15px 0 0 17px;
+/* line 39, app/sass/main.scss */
+.thumbnails__container {
+  margin-top: 21px;
 }
