@@ -1,5 +1,6 @@
 var gulp = require('gulp')
   , plugins = require('gulp-load-plugins')();
+  , ghPages = require('gulp-gh-pages');
 
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
@@ -68,3 +69,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task("default", ["browser-sync", "views", "sass", "javascript", "watch"]);
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
